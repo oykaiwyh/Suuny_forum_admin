@@ -1,0 +1,19 @@
+/*
+ * https://code.visualstudio.com/docs/languages/jsconfig
+ * https://vuejs.github.io/vetur/setup.html#project-setup 插件vetur的配置
+ * 插件 Node modules resolve
+ * 关于vscode aliase支持的配置
+ */
+
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "allowSyntheticDefaultImports": false,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"],
+      "_c/*": ["src/components/*"],
+    }
+  },
+  "exclude": ["node_modules", "dist"]
+}
